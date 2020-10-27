@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title> 인터페이스 구현평가 </title>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="book">
+            <h3>BEST SELLER </h3>
+            
+        </div>
+        <div class="btn"><a href="#">도서등록</a></div>
+
+        <div class="formBox">
+            <form>
+                <!-- fieldset : 폼태그를 그룹화시키는 태그 -->
+                <fieldset>
+                    <legend>도서 등록하기</legend>
+                    <label for="nbTitle"> 책제목 : </label>
+                    <input type="tex" id="nbTitle" placeholder="제목을 입력해주세요"><br>
+                    <label for="nbName"> 저자 :  </label>
+                    <input type="text" id="nbName" placeholder="저자를 입력해주세요"><br>
+                    <label for="nbCompany"> 출판사 :  </label>
+                    <input type="text" id="nbCompany" placeholder="출판사를 입력해주세요"><br>
+                    <label for="nbDate"> 발행일 :  </label>
+                    <input type="text" id="nbDate" placeholder="발행일을 입력해주세요"><br>
+                    <label for="nbWon"> 판매가 : </label>
+                    <input type="text" id="nbWon" placeholder="숫자만 입력하세요" required><br>
+                    <label for="nbUrl"> 이미지 :  </label>
+                    <input type="text" id="nbUrl" required><br>
+                    <label for="nbInfo" class="nbtop"> 도서설명 : </label>
+                    <textarea name="nbInfo" id="nbInfo"></textarea>
+                    <button>등록</button>
+                </fieldset>
+            </form>
+        </div>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>

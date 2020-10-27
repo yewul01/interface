@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+* { margin:0; padding:0; box-sizing:border-box }
+body { background: skyblue; }
+
+.book {
+    max-width:1180px;
+    border:2px solid #fff;
+    margin:0 auto;
+    position: relative;
+    top: 50px;
+}
+
+.book h2 {
+    margin:35px 0;
+    font-size:25px;
+    text-align:center;
+    color:#fff;
+}
+
+.book ul{
+    overflow: hidden; 
+}
+
+.book li{
+    float: left;
+    width: 24%;
+    overflow: hidden;
+    margin:0 0.5% 10px 0.5%;
+    position:relative;
+}
+
+.book img{
+    display: block;
+    width: 280px;
+    height: 350px;
+}
+
+.book li div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom:0;
+    background: rgba(0,0,0,0.7);
+    opacity: 0;
+    z-index: 999;
+    color:#fff;
+}
+
+.book li:hover div{
+    opacity: 1;
+}
+
+.book h3{
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 10px;
+    padding-top:50px;
+    text-align:center;
+}
+
+.book div strong { 
+    display:block;
+    font-size: 16px;
+    text-align:center;
+}
+.book div p {
+    padding:10px;
+    text-align:center;
+    font-size:14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.book div a {
+    display:block;
+    padding-right:30px;
+    text-align:right;
+    color:#fff;
+    font-size:14px;
+}
+
+/* 도서등록 버튼 */
+.btn { text-align: center; margin: 67px; margin-bottom: 20px; }
+.btn a { 
+    padding: 10px 20px; background: #fff; display: inline-block; 
+    text-decoration: none; color: #000; }
+
+/* 도서등록 폼박스 */
+.formBox.on { display: block; }
+.formBox { 
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 999; display: none;
+}
+.formBox form {
+    position: relative; top: 50%; transform: translateY(-50%);
+    width: 50%; margin: 0 auto; border: 1px solid #fff;
+    padding: 100px; color: #000; background: rgb(255, 238, 85);
+}
+.formBox fieldset { border: none; }
+.fomBox legend { font-size: 20px; font-weight: bold; margin-bottom: 30px; text-align: center; }
+.formBox input { margin-bottom: 20px; }
+.formBox label { display: inline-block; width: 100px; }
+
+#nbTitle,
+#nbName,
+#nbCompany,
+#nbDate,
+#nbWon,
+#nbUrl { width: 260px; height: 30px; background: #ffffe1; }
+#nbInfo { margin-bottom: 25px; width: 260px; height: 80px; background: #ffffe1; }
+.formBox button { width: 150px; height: 40px; display: block; margin: 0 auto; }
+.formBox .nbtop { vertical-align: top; }
